@@ -9,7 +9,7 @@ export default class Header extends Component {
 
             
               
-              <p>Be a guest at your next party.</p>
+              <p>It's Party Time!.</p>
             
           </div>
         )
