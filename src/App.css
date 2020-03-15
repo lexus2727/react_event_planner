@@ -3,36 +3,296 @@
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* App Shared Styles */
+
+html {
+	font-family: 'Times New Roman', Times, serif;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type=submit], button, a.button {
+  cursor: pointer;
+  font-weight: bold;
+  background-color: white;
+  border: 2px double white;
+  color: #055471;
+  border-radius: 5px;
+}
+
+/* Row Styles */
+
+div.row {
+	width: 100%;
+}
+
+div.row section {
+	margin: 0px auto 0px auto;
+	padding: 50px;
+	min-width: 450px;
+	max-width: 800px;
+}
+
+div.row h1 {
+	font-size: 2.5em;
+  line-height: 2.3em;
+  color: #08235a;
+}
+
+div.row h2 {
+	font-size: 2em;
+	line-height: 2.3em;
+}
+
+div.row h3 {
+  font-size: 1.5em;
+}
+
+div.row h4 {
+  font-size: 1.35em;
+}
+
+div.firstRow h2, div.orangeRow h2, .darkBlue {
+  color: #08235a;
+}
+div.firstRow p {
+  margin-right: 5%;
+  text-align: center;
+}
+
+div.orangeRow {
+	background-color: #f08d4a;
+	color: white;
+}
+
+div.tealRow {
+	background-color: #054671;
+	color: white;
+}
+
+/* Form Styles*/
+
+div.fullForm h2 {
+  color: white;
+}
+
+div.fullForm form  { 
+  display: table;   
+  width: 100%;   
+}
+
+div.fullForm p { 
+  display: table-row;  
+}
+
+div.fullForm label {
+  font-size: 1.3em;
+  padding-right: 10px;
+}
+
+/* Header and Footer Styles */
+
+#navbar {
+	background-attachment: fixed;
+	background-color:white;
+	top: 0px;
+	position: fixed;
+  width: 100%;
+  border-bottom: 1px solid rgba(51, 194, 251, 0.466);
+}
+
+#navbar h1 {
+  width: 100%;
+  color: #044163;
+  font-size: 3em;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav li {
+	flex-flow: row wrap;
+  flex: 1 1 auto;
+  list-style-type: none;
+}
+
+nav a {
+  color: #044163;
+}
+
+nav a:hover {
+  color: orangered;
+}
+
+div#headerImg img {
+	width: 100%;
+}
+
+div#headerImg p {
+	left: 0;
+  position: absolute;
+  text-align: center;
+  top: 400px;
+  width: 100%;
+	color: white;
+	font: 2em/0em 'Century Gothic', sans-serif;
+} 
+
+#footer {
+	background-color: #08235a;
+	color: white;
+	width: 100%;
+	padding: 20px 0px;
+}
+
+#footer a {
+  color: white;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+}
+
+#footer h4 {
+  margin-bottom: 100px;
+}
+
+#footer p {
+  position: relative;
+  left: 530px;
+}
+
+/* Events and Tasks Styles */
+
+div.list h2 {
+  color: #08235a;
+}
+
+section.flexJustify {
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+div.container {
+  border: 3px outset rgba(51, 194, 251, 0.466);
+  flex-basis: 400px;
+  margin: 10px;
+  padding: 1.5em;
+}
+
+div.container h1 {
+  color: #f08d4a;
+}
+
+div.container h1.incompleted {
+  color: orangered;
+}
+
+div.container h1.completed {
+  color: #0539a1;
+}
+
+div.container h3, div.container h3 a {
+  color: #08235a;
+}
+
+div.container h3 a:hover {
+  border: 2px solid #08235a;
+  background-color: #08235a;
+  color: white;
+}
+
+div.container a.button {
+  float: right;
+  padding: 0px 5px;
+}
+
+.loader {
+  border-top: 16px solid #f3f3f3;
+  border-right: 16px solid #08235a;
+  border-bottom: 16px solid #115888;
+  border-left: 16px solid orangered;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Homepage Styles */
+
+div.orangeRow div {
+	display: flex;
+}
+
+div.orangeRow figure {
+	flex-flow: row wrap;
+	flex: 1 1 auto;
+	color: white;
+}
+
+div.orangeRow figure span {
+  color: #08235a;
+  font-weight: bold;
+  font-size: 2.5em;
+  line-height: 2em;
+}
+
+div.orangeRow figcaption {
+  font-size: 1.3em;
+  padding-top: 15px;
+}
+
+/* Party Planner Styles */
+
+div#eventShow a.button {
+  background-color: #042a75;
+  border: 2px solid #0a2b6d;
+  color: white;
+  font-family: "Geneva";
+  font-size: 0.9em;
+  padding: 0px 10px;
+  margin-bottom: 2em;
+}
+
+div#planner section {
+	padding: 5px 0px 30px 0px;
 }
