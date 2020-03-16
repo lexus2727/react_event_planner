@@ -13,16 +13,13 @@ const WhatToDo = props => {
                 </figure>
                 <figure>
                     <img src="http://c.ststat.net/content/EntImg/Artist/foo-fighters--388821086-300x300.jpg" alt="" />
-                    <figcaption>Plan it Out</figcaption>
+                    <figcaption>Plan it Out</figcaption> 
                 </figure>
+            </div>
                 <figure>
                     <span>{props.countdown}</span>
                     <figcaption>Meet the Deadline</figcaption>
                 </figure>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.</p>
             </section>
         </div>
     )
