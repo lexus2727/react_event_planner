@@ -1,4 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React Event Planner Project API (https://github.com/lexus2727/event_planner_api)
 
 ## Available Scripts
 

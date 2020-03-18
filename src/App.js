@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import './App.css';
-//import EventForm from'./containers/EventForm'
 import Header from './components/Header'
 import Home from './containers/Home'
 import Events from './containers/Events'
